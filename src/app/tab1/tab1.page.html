@@ -35,6 +35,23 @@
             <h2>Finn</h2>
             <h3>I'm a big deal</h3>
             <p>Listen, I've had a pretty messed up day...</p>
+            <ion-row no-padding class="actions-row">
+        <ion-col no-padding width-25 text-left>
+          <button class="action-button" ion-button clear small icon-start>
+            <ion-icon name='heart'></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col no-padding width-25 text-center>
+          <button class="action-button" ion-button clear small icon-start>
+            <ion-icon name='chatbubbles'></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col no-padding width-25 text-right>
+          <button class="action-button" ion-button clear small (click)="sharePost(post)" icon-start>
+            <ion-icon name='share-alt'></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
           </ion-label>
           
         </ion-item>
