@@ -1,86 +1,86 @@
 <ion-content fullscreen>
- 
- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      <ion-title><img src="https://app.futr.pro/app-images/futr-app-logo-header.png" width="32px" height="auto"></ion-title>
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-  
-<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+
+    <ion-header [translucent]="true">
+        <ion-toolbar>
+            <ion-title>
+                <ion-title><img src="https://app.futr.pro/app-images/futr-app-logo-header.png" width="32px" height="auto"></ion-title>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
         <ion-fab-button color="secondary">
-          <ion-icon name="add"></ion-icon>
+            <ion-icon name="add"></ion-icon>
         </ion-fab-button>
         <ion-fab-list side="top">
-          <ion-fab-button color="light">
-            <ion-icon name="football-outline" color="primary"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button color="light">
-            <ion-icon name="trophy-outline" color="primary"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button color="light">
-            <ion-icon name="barbell-outline" color="primary"></ion-icon>
-          </ion-fab-button>
+            <ion-fab-button color="tertiary">
+                <ion-icon name="football-outline" color="light"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="tertiary">
+                <ion-icon name="trophy-outline" color="light"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="tertiary">
+                <ion-icon name="barbell-outline" color="light"></ion-icon>
+            </ion-fab-button>
         </ion-fab-list>
-      </ion-fab>
+    </ion-fab>
 
 
- 
-      
-<ion-card>
-  <ion-card-header>
-    <ion-card-subtitle>Let's Go, Craig!</ion-card-subtitle>
-    <ion-card-title>My Activities</ion-card-title>
-  </ion-card-header>
 
-  <ion-card-content>
-     
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Let's Go, Craig!</ion-card-subtitle>
+            <ion-card-title>My Activities</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+
+            <ion-item>
+                <ion-icon slot="start" name="football-outline" color="secondary"></ion-icon>
+                <ion-label>My Training Reflections</ion-label>
+                <ion-icon slot="end" name="chevron-forward-outline" color="medium" size="small"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon slot="start" name="trophy-outline" color="secondary"></ion-icon>
+                <ion-label>My Match Reflections</ion-label>
+                <ion-icon slot="end" name="chevron-forward-outline" color="medium" size="small"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon slot="start" name="barbell-outline" color="secondary"></ion-icon>
+                <ion-label>My Workouts</ion-label>
+                <ion-icon slot="end" name="chevron-forward-outline" color="medium" size="small"></ion-icon>
+            </ion-item>
+
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
         <ion-item>
-         <ion-icon slot="start" name="football-outline" color="primary"></ion-icon>
-          <ion-label>My Training Reflections</ion-label>
-         <ion-icon slot="end" name="chevron-forward-outline" color="medium" size="small"></ion-icon>
+            <ion-icon name="thumbs-up-outline" slot="start" color="success"></ion-icon>
+            <ion-card-subtitle>Training Goal Achieved</ion-card-subtitle>
+            <ion-button fill="outline" slot="end" color="tertiary">View</ion-button>
         </ion-item>
 
+        <ion-card-content>
+            <ion-card-subtitle>Training Date: mm/dd/yyyy</ion-card-subtitle>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
         <ion-item>
-         <ion-icon slot="start" name="trophy-outline" color="secondary"></ion-icon>
-          <ion-label>My Match Reflections</ion-label>
-         <ion-icon slot="end" name="chevron-forward-outline" color="medium" size="small"></ion-icon>
+            <ion-icon name="thumbs-down-outline" slot="start" color="danger"></ion-icon>
+            <ion-card-subtitle>Match Goal Unachieved</ion-card-subtitle>
+            <ion-button fill="outline" slot="end" color="tertiary">View</ion-button>
         </ion-item>
-        
-        <ion-item>
-         <ion-icon slot="start" name="barbell-outline" color="tertiary"></ion-icon>
-          <ion-label>My Workouts</ion-label>
-         <ion-icon slot="end" name="chevron-forward-outline" color="medium" size="small"></ion-icon>
-        </ion-item>
-      
-  </ion-card-content>
-</ion-card>
 
-<ion-card>
-  <ion-item>
-    <ion-icon name="thumbs-up-outline" slot="start" color="success"></ion-icon>
-    <ion-card-subtitle>Training Goal Achieved</ion-card-subtitle>
-    <ion-button fill="outline" slot="end" color="primary">View</ion-button>
-  </ion-item>
+        <ion-card-content>
+            <ion-card-subtitle>Match Date: mm/dd/yyyy</ion-card-subtitle>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </ion-card-content>
+    </ion-card>
 
-  <ion-card-content>
-   <ion-card-subtitle>Training Date: mm/dd/yyyy</ion-card-subtitle>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </ion-card-content>
-</ion-card>
-     
-     <ion-card>
-  <ion-item>
-    <ion-icon name="thumbs-down-outline" slot="start" color="danger"></ion-icon>
-    <ion-card-subtitle>Match Goal Unachieved</ion-card-subtitle>
-    <ion-button fill="outline" slot="end" color="primary">View</ion-button>
-  </ion-item>
-
-  <ion-card-content>
-   <ion-card-subtitle>Match Date: mm/dd/yyyy</ion-card-subtitle>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </ion-card-content>
-</ion-card>
-      
 </ion-content>
